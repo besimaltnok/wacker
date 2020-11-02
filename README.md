@@ -89,7 +89,9 @@ Of interest are a few new event messages that were added to the wpa supplicant c
 /** auth success for our brute force stuff (WPA3) */
 #define WPA_EVENT_BRUTE_SUCCESS "CTRL-EVENT-BRUTE-SUCCESS "
 /** auth failure for our brute force stuff (WPA3) */
-#define WPA_EVENT_BRUTE_FAILURE "CTRL-EVENT-BRUTE-FAILURE " 
+#define WPA_EVENT_BRUTE_FAILURE "CTRL-EVENT-BRUTE-FAILURE "
+/** retry for our brute force stuff (WPA3) */
+#define WPA_EVENT_BRUTE_RETRY "CTRL-EVENT-BRUTE-RETRY "
 ```
 
 

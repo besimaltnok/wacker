@@ -78,7 +78,7 @@ If you have intentions of farming out your cracking efforts across a series of n
 We're providing our own wpa_supplicant in order to guarantee that certain configurations are set as well as a few mods that need to occur within the source code itself. To build simply do the following. Hopefully in the future this will become a deprecated step.
 ```
 # apt-get install -y pkg-config libnl-3-dev gcc libssl-dev libnl-genl-3-dev
-# cd wpa_supplicant-2.8/wpa_supplicant/
+# cd wpa_supplicant-2.9/wpa_supplicant/
 # cp defconfig_brute_force .config
 # make -j4
 # ls -al wpa_supplicant

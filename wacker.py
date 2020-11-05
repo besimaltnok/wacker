@@ -34,7 +34,7 @@ class Wacker(object):
         self.server = f'{self.dir}/{args.interface}'
         self.conf = f'{self.server}.conf'
         self.log  = f'{self.server}.log'
-        self.wpa  = './wpa_supplicant-2.8/wpa_supplicant/wpa_supplicant'
+        self.wpa  = './wpa_supplicant-2.9/wpa_supplicant/wpa_supplicant'
         self.pid  = f'{self.server}.pid'
         self.me = f'{self.dir}/{args.interface}_client'
         self.cmd = f'{self.wpa} -P {self.pid} -B -i {self.args.interface} -c {self.conf}'

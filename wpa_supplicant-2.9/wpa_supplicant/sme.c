@@ -1136,7 +1136,8 @@ static int sme_sae_auth(struct wpa_supplicant *wpa_s, u16 auth_transaction,
 	}
 
 	if (status_code != WLAN_STATUS_SUCCESS) {
-		wpa_msg_ctrl(wpa_s, MSG_INFO, "WPA_EVENT_BRUTE_FAILURE hit");
+		wpa_msg_ctrl(wpa_s, MSG_INFO, WPA_EVENT_BRUTE_FAILURE);
+		wpa_msg(wpa_s, MSG_INFO, "WPA_EVENT_BRUTE_FAILURE hit");
 		return -1;
 	}
 

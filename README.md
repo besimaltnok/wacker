@@ -1,6 +1,16 @@
 # Overview
 A set of scripts to help perform an online dictionary attack against a WPA3 access point. Wacker leverages the wpa_supplicant control interface to control the operations of the supplicant daemon and to get status information and event notifications ultimately helping speedup connection attempts during brute force attempts.
 
+# Find a real AP to use
+More to come on this.... wacker is still under development.
+
+# Virtual Wifi Arena
+Setup a local environment using mac80211_hwsim (details below) or use the VMs provided by the RF Hackers Sanctuary (highly recommended). Testing was done almost exculsively using the simulated mac80211 environments and perform very well.
+
+## Local Simulated Radios
+To set up your own software simulator of 802.11 radios simply configure and load the correct mac80211_hwsim module.
+```
+# modprobe mac80211_hwsim radios=4
 # iwconfig
 wlan0     IEEE 802.11  ESSID:off/any
           Mode:Managed  Access Point: Not-Associated   Tx-Power=20 dBm
@@ -143,6 +153,7 @@ wacker is quite verbose. Files of interest are found under <b>/tmp/wacker/</b>
  - wlan1.log : supplicant output (only when using --debug option)
  - wlan1.pid : pid file for the wpa_supplciant instance
  - wlan1_wacker.log : wacker debug output
+
 
 
 # Common Problems
